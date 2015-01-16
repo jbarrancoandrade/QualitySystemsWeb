@@ -75,9 +75,6 @@ and open the template in the editor.
 
 
     </head>
-
-
-
     <body>
         <div id="wrapper">
             <header>
@@ -144,35 +141,6 @@ and open the template in the editor.
                         </div>
                     </div>
                 </div>	
-            </section>
-            <section id="Medio">
-
-                <div class="well container"  >
-                    <div class="col-lg-5">
-                        <h3 class="h3">¿ Eres Contador ? </h3>
-                        <div class="text">
-                            <p>Conoce nuestra herramienta demo totalmente gratis</p> 
-                            <input type="email" class="form-control" id="inscribir"
-                                   placeholder="Introduce tu email" size="1" >
-
-                            <button type="button"  class="btn btn-primary" style="float: right">Inscribete</button>
-                        </div>
-
-                    </div>
-                    <div class="row" style="float: right">
-                        <div style="float: left" >
-                            <h2 class="h2" style="color: #000">Nombre</h2>
-                            <h4 class="h4">Consultor Finaciero</h4>
-                            <p class="col-lg-6">escsafdfdsfsafdsdnsdjkanjkdnasjkndajkndjkasnkasnkjnast</p>
-                        </div>
-                        <div style="float: right">
-                            <img src="Img/avatar.png" alt="2"   class="img-circle" height="160" width="160">
-                        </div>
-
-                    </div>
-
-                </div>
-
             </section>
             <section id="content">
                 <div class="container">
@@ -252,6 +220,127 @@ and open the template in the editor.
                     </div>
                 </div>
             </section>
+            <section id="Medio">
+
+                <div class="well container"  >
+                    <div class="col-lg-5">
+                        <h3 class="h3">¿ Eres Contador ? </h3>
+                        <div class="text">
+                            <p>Conoce nuestra herramienta demo totalmente gratis</p> 
+                            <input type="email" class="form-control" id="inscribir"
+                                   placeholder="Introduce tu email" size="1" >
+
+                            <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="float: right">Inscribete</button>
+                        </div>
+
+                    </div>
+                    <div class="row" style="float: right">
+                        <div style="float: left" >
+                            <h2 class="h2" style="color: #000">Nombre</h2>
+                            <h4 class="h4">Consultor Finaciero</h4>
+                            <p class="col-lg-6">escsafdfdsfsafdsdnsdjkanjkdnasjkndajkndjkasnkasnkjnast</p>
+                        </div>
+                        <div style="float: right">
+                            <img src="Img/avatar.png" alt="2"   class="img-circle" height="160" width="160">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Bienvenido A la Familia Quality</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form">
+                                    
+                                    <fieldset>
+                                        <legend>Datos Basicos</legend>
+                                        <span style="float: right;color: red">Rellene Por Favor todos Los campors</span>
+                                    <div class="form-group">
+                                        <label for="correo">Email</label>
+                                        <input type="email" class="form-control" id="correo"
+                                               placeholder="Introduce tu email" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Nombres</label>
+                                        <input type="text" class="form-control" id="name" 
+                                               placeholder="nombres" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last_name">Apellidos</label>
+                                        <input type="text" class="form-control" id="last_name" 
+                                               placeholder="apellidos" required>
+                                    </div>
+                                    </fieldset>
+                                    <div class="form-group">
+                                        <fieldset>
+                                            <legend>Identificacion </legend>
+                                            <label>Tipo Identificaion</label>
+                                            <select id="tp">
+                                                <option>Seleccione Documento</option>
+                                                <option>Cedula</option>
+                                                <option>Cedula Extrajeria </option>
+                                                <option>Nit</option>
+
+                                            </select>
+                                            <input type="text" maxlength="10" required  placeholder="numero" name="identificacion" >
+                                            <div class="form-group">
+                                                <label for="rt">Rut</label>
+                                                <input type="text" maxlength="10"  class="form-control" id="rt" 
+                                                       placeholder="Rut" required>
+                                            </div>
+
+                                        </fieldset>
+                                    </div>
+                                    
+                                     <div class="form-group">
+                                        <fieldset>
+                                            <legend>Ubicacion</legend>
+                                           <div class="form-group">
+                                                <label for="city">Ciudad</label>
+                                                <input type="text"  class="form-control" id="city" 
+                                                       placeholder="Ciudad" required>
+                                            </div>
+
+                                        </fieldset>
+                                    </div>
+                                    
+                                     <div class="form-group">
+                                        <fieldset>
+                                            <legend>Contacto</legend>
+                                           <div class="form-group">
+                                                <label for="tel">telefono</label>
+                                                <input type="tel"  class="form-control" id="tel" 
+                                                       placeholder="Telefono" required>
+                                            </div>
+
+                                        </fieldset>
+                                    </div>
+
+
+
+
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-primary">Enviar Datos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+            </section>
+
             <section id="carrucel" style="margin-bottom: 50px">
                 <div class="container" >
                     <div class="cursual"><!--  start cursual  -->
@@ -265,7 +354,7 @@ and open the template in the editor.
                         </div>
                         <div class="item">
                             <div class="cau_left">
-                                <img class="lazyOwl" src="Img/Empresas/c3.png" alt="Lazy Owl Image">
+                                <img class="lazyOwl" src="Img/Empresas/c2.png" alt="Lazy Owl Image">
                             </div>
                         </div>
                         <div class="item">
@@ -275,18 +364,18 @@ and open the template in the editor.
                         </div>
                         <div class="item">
                             <div class="cau_left">
-                                <img class="lazyOwl" src="Img/Empresas/c3.png" alt="Lazy Owl Image">
+                                <img class="lazyOwl" src="Img/Empresas/c4.png" alt="Lazy Owl Image">
                             </div>
                         </div>
                         <div class="item">
                             <div class="cau_left">
-                                <img class="lazyOwl" src="Img/Empresas/c3.png" alt="Lazy Owl Image">
+                                <img class="lazyOwl" src="Img/Empresas/c2.png" alt="Lazy Owl Image">
                             </div>
                         </div>
-                     	
-                     
+
+
                     </div><!----//End-img-cursual---->
-                    
+
                 </div>
 
             </section>
